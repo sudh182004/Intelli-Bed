@@ -1,3 +1,5 @@
+/* Nav bar */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -22,6 +24,7 @@ nav {
     align-items: center;
     background-color: white;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    justify-content: space-between; /* Ensure the profile icon is on the right */
 }
 
 nav .logo {
@@ -43,6 +46,24 @@ nav .logo {
     font-weight: 500;
 }
 
+/* User Profile Icon */
+nav .user-profile {
+    margin-right: 24px;
+}
+
+nav .profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+nav .profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Sidebar */
 nav .sidebar {
     position: fixed;
     top: 0;
@@ -82,7 +103,7 @@ nav.open .sidebar {
 
 .lists .nav-link:hover,
 .bottom-content .nav-link:hover {
-    background-color: #8187d0;
+    background-color: #f6735d;
 }
 
 .nav-link .icon {
