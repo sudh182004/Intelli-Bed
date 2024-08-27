@@ -57,7 +57,7 @@ function logout() {
         .auth()
         .signOut()
         .then(() => {
-          window.location.href = "/Intelli-Bed";
+          window.location.href = "/";
           // checkbox empty 
           localStorage.setItem("userstatus", "logout");
         })
