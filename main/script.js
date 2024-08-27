@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged((user) => {
 
     }
   } else {
-    // alert("No user is signed in or auth object not initialized yet");
+    window.location.href="../index.html"
   }
 });
 
